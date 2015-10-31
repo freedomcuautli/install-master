@@ -1,0 +1,209 @@
+1446269778s:14403:"a:4:{s:5:"mtime";i:1446268266;s:7:"content";s:5471:"name: 'Main Menu'
+items:
+    -
+        title: Home
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: index
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isExternal: '0'
+            isHidden: '0'
+            cssClass: ''
+    -
+        title: Organization
+        nesting: '1'
+        type: static-page
+        url: ''
+        code: ''
+        reference: organization
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isExternal: '0'
+            isHidden: '0'
+            cssClass: ''
+    -
+        title: News
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: news
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isExternal: '0'
+            isHidden: '0'
+            cssClass: ''
+        items:
+            -
+                title: News
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: news
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isExternal: '0'
+                    isHidden: '0'
+                    cssClass: ''
+            -
+                title: Newsletter
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: newsletter
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isExternal: '0'
+                    isHidden: '0'
+                    cssClass: ''
+    -
+        title: Events
+        nesting: '1'
+        type: static-page
+        code: ''
+        reference: chairs
+        replace: '0'
+        viewBag:
+            isExternal: '0'
+            isHidden: '0'
+            cssClass: ''
+        items:
+            -
+                title: 'Calendar of Events'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: events-calendar-events
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isExternal: '0'
+                    isHidden: '0'
+                    cssClass: ''
+            -
+                title: 'Upcoming Events'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: events-upcoming-conferences
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isExternal: '0'
+                    isHidden: '0'
+                    cssClass: ''
+            -
+                title: 'Past Events'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: events-past-events
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isExternal: '0'
+                    isHidden: '0'
+                    cssClass: ''
+    -
+        title: Opportunities
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: opportunities
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isExternal: '0'
+            isHidden: '0'
+            cssClass: ''
+        items:
+            -
+                title: Scholarships
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: opportunities-scholarships
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isExternal: '0'
+                    isHidden: '0'
+                    cssClass: ''
+            -
+                title: 'Become a Member'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: opportunities-membership
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isExternal: '0'
+                    isHidden: '0'
+                    cssClass: ''
+            -
+                title: Careers
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: opportunities-careers
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isExternal: '0'
+                    isHidden: '0'
+                    cssClass: ''
+    -
+        title: About
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: about
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isExternal: '0'
+            isHidden: '0'
+            cssClass: ''
+        items:
+            -
+                title: Contact
+                nesting: ''
+                type: cms-page
+                url: ''
+                code: ''
+                reference: contact
+                cmsPage: ''
+                replace: ''
+            -
+                title: Vision
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: about-team
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isExternal: '0'
+                    isHidden: '0'
+                    cssClass: ''
+";s:4:"name";s:9:"Main Menu";s:5:"items";s:8828:"a:6:{i:0;O:30:"RainLab\Pages\Classes\MenuItem":13:{s:5:"title";s:4:"Home";s:5:"items";a:0:{}s:6:"parent";N;s:7:"nesting";s:1:"0";s:4:"type";s:11:"static-page";s:3:"url";s:0:"";s:4:"code";s:0:"";s:9:"reference";s:5:"index";s:7:"replace";s:1:"0";s:7:"cmsPage";s:0:"";s:6:"exists";b:0;s:8:"fillable";a:9:{i:0;s:5:"title";i:1;s:7:"nesting";i:2;s:4:"type";i:3;s:3:"url";i:4;s:4:"code";i:5;s:9:"reference";i:6;s:7:"cmsPage";i:7;s:7:"replace";i:8;s:7:"viewBag";}s:7:"viewBag";a:3:{s:10:"isExternal";s:1:"0";s:8:"isHidden";s:1:"0";s:8:"cssClass";s:0:"";}}i:1;O:30:"RainLab\Pages\Classes\MenuItem":13:{s:5:"title";s:12:"Organization";s:5:"items";a:0:{}s:6:"parent";N;s:7:"nesting";s:1:"1";s:4:"type";s:11:"static-page";s:3:"url";s:0:"";s:4:"code";s:0:"";s:9:"reference";s:12:"organization";s:7:"replace";s:1:"0";s:7:"cmsPage";s:0:"";s:6:"exists";b:0;s:8:"fillable";a:9:{i:0;s:5:"title";i:1;s:7:"nesting";i:2;s:4:"type";i:3;s:3:"url";i:4;s:4:"code";i:5;s:9:"reference";i:6;s:7:"cmsPage";i:7;s:7:"replace";i:8;s:7:"viewBag";}s:7:"viewBag";a:3:{s:10:"isExternal";s:1:"0";s:8:"isHidden";s:1:"0";s:8:"cssClass";s:0:"";}}i:2;O:30:"RainLab\Pages\Classes\MenuItem":13:{s:5:"title";s:4:"News";s:5:"items";a:2:{i:0;O:30:"RainLab\Pages\Classes\MenuItem":13:{s:5:"title";s:4:"News";s:5:"items";a:0:{}s:6:"parent";N;s:7:"nesting";s:1:"0";s:4:"type";s:11:"static-page";s:3:"url";s:0:"";s:4:"code";s:0:"";s:9:"reference";s:4:"news";s:7:"replace";s:1:"0";s:7:"cmsPage";s:0:"";s:6:"exists";b:0;s:8:"fillable";a:9:{i:0;s:5:"title";i:1;s:7:"nesting";i:2;s:4:"type";i:3;s:3:"url";i:4;s:4:"code";i:5;s:9:"reference";i:6;s:7:"cmsPage";i:7;s:7:"replace";i:8;s:7:"viewBag";}s:7:"viewBag";a:3:{s:10:"isExternal";s:1:"0";s:8:"isHidden";s:1:"0";s:8:"cssClass";s:0:"";}}i:1;O:30:"RainLab\Pages\Classes\MenuItem":13:{s:5:"title";s:10:"Newsletter";s:5:"items";a:0:{}s:6:"parent";N;s:7:"nesting";s:1:"0";s:4:"type";s:11:"static-page";s:3:"url";s:0:"";s:4:"code";s:0:"";s:9:"reference";s:10:"newsletter";s:7:"replace";s:1:"0";s:7:"cmsPage";s:0:"";s:6:"exists";b:0;s:8:"fillable";a:9:{i:0;s:5:"title";i:1;s:7:"nesting";i:2;s:4:"type";i:3;s:3:"url";i:4;s:4:"code";i:5;s:9:"reference";i:6;s:7:"cmsPage";i:7;s:7:"replace";i:8;s:7:"viewBag";}s:7:"viewBag";a:3:{s:10:"isExternal";s:1:"0";s:8:"isHidden";s:1:"0";s:8:"cssClass";s:0:"";}}}s:6:"parent";N;s:7:"nesting";s:1:"0";s:4:"type";s:11:"static-page";s:3:"url";s:0:"";s:4:"code";s:0:"";s:9:"reference";s:4:"news";s:7:"replace";s:1:"0";s:7:"cmsPage";s:0:"";s:6:"exists";b:0;s:8:"fillable";a:9:{i:0;s:5:"title";i:1;s:7:"nesting";i:2;s:4:"type";i:3;s:3:"url";i:4;s:4:"code";i:5;s:9:"reference";i:6;s:7:"cmsPage";i:7;s:7:"replace";i:8;s:7:"viewBag";}s:7:"viewBag";a:3:{s:10:"isExternal";s:1:"0";s:8:"isHidden";s:1:"0";s:8:"cssClass";s:0:"";}}i:3;O:30:"RainLab\Pages\Classes\MenuItem":13:{s:5:"title";s:6:"Events";s:5:"items";a:3:{i:0;O:30:"RainLab\Pages\Classes\MenuItem":13:{s:5:"title";s:18:"Calendar of Events";s:5:"items";a:0:{}s:6:"parent";N;s:7:"nesting";s:1:"0";s:4:"type";s:11:"static-page";s:3:"url";s:0:"";s:4:"code";s:0:"";s:9:"reference";s:22:"events-calendar-events";s:7:"replace";s:1:"0";s:7:"cmsPage";s:0:"";s:6:"exists";b:0;s:8:"fillable";a:9:{i:0;s:5:"title";i:1;s:7:"nesting";i:2;s:4:"type";i:3;s:3:"url";i:4;s:4:"code";i:5;s:9:"reference";i:6;s:7:"cmsPage";i:7;s:7:"replace";i:8;s:7:"viewBag";}s:7:"viewBag";a:3:{s:10:"isExternal";s:1:"0";s:8:"isHidden";s:1:"0";s:8:"cssClass";s:0:"";}}i:1;O:30:"RainLab\Pages\Classes\MenuItem":13:{s:5:"title";s:15:"Upcoming Events";s:5:"items";a:0:{}s:6:"parent";N;s:7:"nesting";s:1:"0";s:4:"type";s:11:"static-page";s:3:"url";s:0:"";s:4:"code";s:0:"";s:9:"reference";s:27:"events-upcoming-conferences";s:7:"replace";s:1:"0";s:7:"cmsPage";s:0:"";s:6:"exists";b:0;s:8:"fillable";a:9:{i:0;s:5:"title";i:1;s:7:"nesting";i:2;s:4:"type";i:3;s:3:"url";i:4;s:4:"code";i:5;s:9:"reference";i:6;s:7:"cmsPage";i:7;s:7:"replace";i:8;s:7:"viewBag";}s:7:"viewBag";a:3:{s:10:"isExternal";s:1:"0";s:8:"isHidden";s:1:"0";s:8:"cssClass";s:0:"";}}i:2;O:30:"RainLab\Pages\Classes\MenuItem":13:{s:5:"title";s:11:"Past Events";s:5:"items";a:0:{}s:6:"parent";N;s:7:"nesting";s:1:"0";s:4:"type";s:11:"static-page";s:3:"url";s:0:"";s:4:"code";s:0:"";s:9:"reference";s:18:"events-past-events";s:7:"replace";s:1:"0";s:7:"cmsPage";s:0:"";s:6:"exists";b:0;s:8:"fillable";a:9:{i:0;s:5:"title";i:1;s:7:"nesting";i:2;s:4:"type";i:3;s:3:"url";i:4;s:4:"code";i:5;s:9:"reference";i:6;s:7:"cmsPage";i:7;s:7:"replace";i:8;s:7:"viewBag";}s:7:"viewBag";a:3:{s:10:"isExternal";s:1:"0";s:8:"isHidden";s:1:"0";s:8:"cssClass";s:0:"";}}}s:6:"parent";N;s:7:"nesting";s:1:"1";s:4:"type";s:11:"static-page";s:3:"url";N;s:4:"code";s:0:"";s:9:"reference";s:6:"chairs";s:7:"replace";s:1:"0";s:7:"cmsPage";N;s:6:"exists";b:0;s:8:"fillable";a:9:{i:0;s:5:"title";i:1;s:7:"nesting";i:2;s:4:"type";i:3;s:3:"url";i:4;s:4:"code";i:5;s:9:"reference";i:6;s:7:"cmsPage";i:7;s:7:"replace";i:8;s:7:"viewBag";}s:7:"viewBag";a:3:{s:10:"isExternal";s:1:"0";s:8:"isHidden";s:1:"0";s:8:"cssClass";s:0:"";}}i:4;O:30:"RainLab\Pages\Classes\MenuItem":13:{s:5:"title";s:13:"Opportunities";s:5:"items";a:3:{i:0;O:30:"RainLab\Pages\Classes\MenuItem":13:{s:5:"title";s:12:"Scholarships";s:5:"items";a:0:{}s:6:"parent";N;s:7:"nesting";s:1:"0";s:4:"type";s:11:"static-page";s:3:"url";s:0:"";s:4:"code";s:0:"";s:9:"reference";s:26:"opportunities-scholarships";s:7:"replace";s:1:"0";s:7:"cmsPage";s:0:"";s:6:"exists";b:0;s:8:"fillable";a:9:{i:0;s:5:"title";i:1;s:7:"nesting";i:2;s:4:"type";i:3;s:3:"url";i:4;s:4:"code";i:5;s:9:"reference";i:6;s:7:"cmsPage";i:7;s:7:"replace";i:8;s:7:"viewBag";}s:7:"viewBag";a:3:{s:10:"isExternal";s:1:"0";s:8:"isHidden";s:1:"0";s:8:"cssClass";s:0:"";}}i:1;O:30:"RainLab\Pages\Classes\MenuItem":13:{s:5:"title";s:15:"Become a Member";s:5:"items";a:0:{}s:6:"parent";N;s:7:"nesting";s:1:"0";s:4:"type";s:11:"static-page";s:3:"url";s:0:"";s:4:"code";s:0:"";s:9:"reference";s:24:"opportunities-membership";s:7:"replace";s:1:"0";s:7:"cmsPage";s:0:"";s:6:"exists";b:0;s:8:"fillable";a:9:{i:0;s:5:"title";i:1;s:7:"nesting";i:2;s:4:"type";i:3;s:3:"url";i:4;s:4:"code";i:5;s:9:"reference";i:6;s:7:"cmsPage";i:7;s:7:"replace";i:8;s:7:"viewBag";}s:7:"viewBag";a:3:{s:10:"isExternal";s:1:"0";s:8:"isHidden";s:1:"0";s:8:"cssClass";s:0:"";}}i:2;O:30:"RainLab\Pages\Classes\MenuItem":13:{s:5:"title";s:7:"Careers";s:5:"items";a:0:{}s:6:"parent";N;s:7:"nesting";s:1:"0";s:4:"type";s:11:"static-page";s:3:"url";s:0:"";s:4:"code";s:0:"";s:9:"reference";s:21:"opportunities-careers";s:7:"replace";s:1:"0";s:7:"cmsPage";s:0:"";s:6:"exists";b:0;s:8:"fillable";a:9:{i:0;s:5:"title";i:1;s:7:"nesting";i:2;s:4:"type";i:3;s:3:"url";i:4;s:4:"code";i:5;s:9:"reference";i:6;s:7:"cmsPage";i:7;s:7:"replace";i:8;s:7:"viewBag";}s:7:"viewBag";a:3:{s:10:"isExternal";s:1:"0";s:8:"isHidden";s:1:"0";s:8:"cssClass";s:0:"";}}}s:6:"parent";N;s:7:"nesting";s:1:"0";s:4:"type";s:11:"static-page";s:3:"url";s:0:"";s:4:"code";s:0:"";s:9:"reference";s:13:"opportunities";s:7:"replace";s:1:"0";s:7:"cmsPage";s:0:"";s:6:"exists";b:0;s:8:"fillable";a:9:{i:0;s:5:"title";i:1;s:7:"nesting";i:2;s:4:"type";i:3;s:3:"url";i:4;s:4:"code";i:5;s:9:"reference";i:6;s:7:"cmsPage";i:7;s:7:"replace";i:8;s:7:"viewBag";}s:7:"viewBag";a:3:{s:10:"isExternal";s:1:"0";s:8:"isHidden";s:1:"0";s:8:"cssClass";s:0:"";}}i:5;O:30:"RainLab\Pages\Classes\MenuItem":13:{s:5:"title";s:5:"About";s:5:"items";a:2:{i:0;O:30:"RainLab\Pages\Classes\MenuItem":13:{s:5:"title";s:7:"Contact";s:5:"items";a:0:{}s:6:"parent";N;s:7:"nesting";s:0:"";s:4:"type";s:8:"cms-page";s:3:"url";s:0:"";s:4:"code";s:0:"";s:9:"reference";s:7:"contact";s:7:"replace";s:0:"";s:7:"cmsPage";s:0:"";s:6:"exists";b:0;s:8:"fillable";a:9:{i:0;s:5:"title";i:1;s:7:"nesting";i:2;s:4:"type";i:3;s:3:"url";i:4;s:4:"code";i:5;s:9:"reference";i:6;s:7:"cmsPage";i:7;s:7:"replace";i:8;s:7:"viewBag";}s:7:"viewBag";a:0:{}}i:1;O:30:"RainLab\Pages\Classes\MenuItem":13:{s:5:"title";s:6:"Vision";s:5:"items";a:0:{}s:6:"parent";N;s:7:"nesting";s:1:"0";s:4:"type";s:11:"static-page";s:3:"url";s:0:"";s:4:"code";s:0:"";s:9:"reference";s:10:"about-team";s:7:"replace";s:1:"0";s:7:"cmsPage";s:0:"";s:6:"exists";b:0;s:8:"fillable";a:9:{i:0;s:5:"title";i:1;s:7:"nesting";i:2;s:4:"type";i:3;s:3:"url";i:4;s:4:"code";i:5;s:9:"reference";i:6;s:7:"cmsPage";i:7;s:7:"replace";i:8;s:7:"viewBag";}s:7:"viewBag";a:3:{s:10:"isExternal";s:1:"0";s:8:"isHidden";s:1:"0";s:8:"cssClass";s:0:"";}}}s:6:"parent";N;s:7:"nesting";s:1:"0";s:4:"type";s:11:"static-page";s:3:"url";s:0:"";s:4:"code";s:0:"";s:9:"reference";s:5:"about";s:7:"replace";s:1:"0";s:7:"cmsPage";s:0:"";s:6:"exists";b:0;s:8:"fillable";a:9:{i:0;s:5:"title";i:1;s:7:"nesting";i:2;s:4:"type";i:3;s:3:"url";i:4;s:4:"code";i:5;s:9:"reference";i:6;s:7:"cmsPage";i:7;s:7:"replace";i:8;s:7:"viewBag";}s:7:"viewBag";a:3:{s:10:"isExternal";s:1:"0";s:8:"isHidden";s:1:"0";s:8:"cssClass";s:0:"";}}}";}";

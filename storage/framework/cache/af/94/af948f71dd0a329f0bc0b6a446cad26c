@@ -1,0 +1,8 @@
+1446267668s:919:"a:7:{s:5:"mtime";i:1446265429;s:7:"content";s:217:"[viewBag]
+title = "Events"
+url = "/events"
+layout = "default"
+is_hidden = 0
+navigation_hidden = 0
+==
+<h3>Azla Events</h3><p><span>This content is being updated</span><br></p><p>We are working on something awesome!</p>";s:7:"viewBag";a:5:{s:5:"title";s:6:"Events";s:3:"url";s:7:"/events";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}s:8:"settings";a:1:{s:10:"components";a:1:{s:7:"viewBag";a:5:{s:5:"title";s:6:"Events";s:3:"url";s:7:"/events";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}}}s:4:"code";N;s:6:"markup";s:116:"<h3>Azla Events</h3><p><span>This content is being updated</span><br></p><p>We are working on something awesome!</p>";s:13:"parsed-markup";s:116:"<h3>Azla Events</h3><p><span>This content is being updated</span><br></p><p>We are working on something awesome!</p>";}";

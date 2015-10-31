@@ -1,0 +1,208 @@
+name: 'Main Menu'
+items:
+    -
+        title: Home
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: index
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isExternal: '0'
+            isHidden: '0'
+            cssClass: ''
+    -
+        title: Organization
+        nesting: '1'
+        type: static-page
+        url: ''
+        code: ''
+        reference: organization
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isExternal: '0'
+            isHidden: '0'
+            cssClass: ''
+    -
+        title: News
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: news
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isExternal: '0'
+            isHidden: '0'
+            cssClass: ''
+        items:
+            -
+                title: News
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: news
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isExternal: '0'
+                    isHidden: '0'
+                    cssClass: ''
+            -
+                title: Newsletter
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: newsletter
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isExternal: '0'
+                    isHidden: '0'
+                    cssClass: ''
+    -
+        title: Events
+        nesting: '1'
+        type: static-page
+        code: ''
+        reference: chairs
+        replace: '0'
+        viewBag:
+            isExternal: '0'
+            isHidden: '0'
+            cssClass: ''
+        items:
+            -
+                title: 'Calendar of Events'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: events-calendar-events
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isExternal: '0'
+                    isHidden: '0'
+                    cssClass: ''
+            -
+                title: 'Upcoming Events'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: events-upcoming-conferences
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isExternal: '0'
+                    isHidden: '0'
+                    cssClass: ''
+            -
+                title: 'Past Events'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: events-past-events
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isExternal: '0'
+                    isHidden: '0'
+                    cssClass: ''
+    -
+        title: Opportunities
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: opportunities
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isExternal: '0'
+            isHidden: '0'
+            cssClass: ''
+        items:
+            -
+                title: Scholarships
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: opportunities-scholarships
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isExternal: '0'
+                    isHidden: '0'
+                    cssClass: ''
+            -
+                title: 'Become a Member'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: opportunities-membership
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isExternal: '0'
+                    isHidden: '0'
+                    cssClass: ''
+            -
+                title: Careers
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: opportunities-careers
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isExternal: '0'
+                    isHidden: '0'
+                    cssClass: ''
+    -
+        title: About
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: about
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isExternal: '0'
+            isHidden: '0'
+            cssClass: ''
+        items:
+            -
+                title: Contact
+                nesting: ''
+                type: cms-page
+                url: ''
+                code: ''
+                reference: contact
+                cmsPage: ''
+                replace: ''
+            -
+                title: Vision
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: about-team
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isExternal: '0'
+                    isHidden: '0'
+                    cssClass: ''

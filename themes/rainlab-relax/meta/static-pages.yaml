@@ -1,0 +1,22 @@
+static-pages:
+    index: {  }
+    about:
+        about-team: {  }
+    clients:
+        clients-announcements: {  }
+        clients-newsletters: {  }
+        clients-gallery: {  }
+    opportunities:
+        opportunities-scholarships: {  }
+        opportunities-membership: {  }
+        opportunities-careers: {  }
+    organization:
+        organization-board: {  }
+        organization-affiliations: {  }
+        organization-history: {  }
+    news: {  }
+    newsletter: {  }
+    chairs:
+        events-calendar-events: {  }
+        events-upcoming-conferences: {  }
+        events-past-events: {  }

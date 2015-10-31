@@ -1,0 +1,7 @@
+1446268350s:615:"a:7:{s:5:"mtime";i:1446252518;s:7:"content";s:115:"[viewBag]
+title = "High Chairs"
+url = "/chairs/high-chairs"
+layout = "chair"
+is_hidden = 0
+navigation_hidden = 0
+==";s:7:"viewBag";a:5:{s:5:"title";s:11:"High Chairs";s:3:"url";s:19:"/chairs/high-chairs";s:6:"layout";s:5:"chair";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}s:8:"settings";a:1:{s:10:"components";a:1:{s:7:"viewBag";a:5:{s:5:"title";s:11:"High Chairs";s:3:"url";s:19:"/chairs/high-chairs";s:6:"layout";s:5:"chair";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}}}s:4:"code";N;s:6:"markup";s:0:"";s:13:"parsed-markup";s:0:"";}";
