@@ -1,7 +1,9 @@
-1446269778s:645:"a:7:{s:5:"mtime";i:1446248052;s:7:"content";s:125:"[viewBag]
-title = "Upcoming Events"
-url = "/events/upcoming-events"
+1454299704s:1763:"a:7:{s:5:"mtime";i:1454218225;s:7:"content";s:491:"[viewBag]
+title = "Spring Workshop"
+url = "/events/SpringWorkshop"
 layout = "default"
 is_hidden = 0
 navigation_hidden = 0
-==";s:7:"viewBag";a:5:{s:5:"title";s:15:"Upcoming Events";s:3:"url";s:23:"/events/upcoming-events";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}s:8:"settings";a:1:{s:10:"components";a:1:{s:7:"viewBag";a:5:{s:5:"title";s:15:"Upcoming Events";s:3:"url";s:23:"/events/upcoming-events";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}}}s:4:"code";N;s:6:"markup";s:0:"";s:13:"parsed-markup";s:0:"";}";
+banner = "/events1.jpg"
+==
+<h3>"Are you ready? The NEW Arizona World and Native Languages Standards"</h3><p>February 20, 2016 at Cactus Shadows&nbsp;​High School</p><p>​For more information and to register:&nbsp;<a href="https://sites.google.com/site/azlaweb/home/azla-events_/azla-spring-2016-workshop">https://sites.google.com/site/azlaweb/home/azla-ev...</a></p>";s:7:"viewBag";a:6:{s:5:"title";s:15:"Spring Workshop";s:3:"url";s:22:"/events/SpringWorkshop";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";s:6:"banner";s:12:"/events1.jpg";}s:8:"settings";a:1:{s:10:"components";a:1:{s:7:"viewBag";a:6:{s:5:"title";s:15:"Spring Workshop";s:3:"url";s:22:"/events/SpringWorkshop";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";s:6:"banner";s:12:"/events1.jpg";}}}s:4:"code";N;s:6:"markup";s:342:"<h3>"Are you ready? The NEW Arizona World and Native Languages Standards"</h3><p>February 20, 2016 at Cactus Shadows&nbsp;​High School</p><p>​For more information and to register:&nbsp;<a href="https://sites.google.com/site/azlaweb/home/azla-events_/azla-spring-2016-workshop">https://sites.google.com/site/azlaweb/home/azla-ev...</a></p>";s:13:"parsed-markup";s:342:"<h3>"Are you ready? The NEW Arizona World and Native Languages Standards"</h3><p>February 20, 2016 at Cactus Shadows&nbsp;​High School</p><p>​For more information and to register:&nbsp;<a href="https://sites.google.com/site/azlaweb/home/azla-events_/azla-spring-2016-workshop">https://sites.google.com/site/azlaweb/home/azla-ev...</a></p>";}";

@@ -1,7 +1,9 @@
-1446269778s:594:"a:7:{s:5:"mtime";i:1446244731;s:7:"content";s:108:"[viewBag]
-title = "Newsletter"
-url = "/newsletter"
-layout = "default"
+1454299703s:681:"a:7:{s:5:"mtime";i:1454214819;s:7:"content";s:133:"[viewBag]
+title = "All News"
+url = "/allnews"
+layout = "news"
 is_hidden = 0
 navigation_hidden = 0
-==";s:7:"viewBag";a:5:{s:5:"title";s:10:"Newsletter";s:3:"url";s:11:"/newsletter";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}s:8:"settings";a:1:{s:10:"components";a:1:{s:7:"viewBag";a:5:{s:5:"title";s:10:"Newsletter";s:3:"url";s:11:"/newsletter";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}}}s:4:"code";N;s:6:"markup";s:0:"";s:13:"parsed-markup";s:0:"";}";
+banner = "/news.jpg"
+==
+<p><br></p>";s:7:"viewBag";a:6:{s:5:"title";s:8:"All News";s:3:"url";s:8:"/allnews";s:6:"layout";s:4:"news";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";s:6:"banner";s:9:"/news.jpg";}s:8:"settings";a:1:{s:10:"components";a:1:{s:7:"viewBag";a:6:{s:5:"title";s:8:"All News";s:3:"url";s:8:"/allnews";s:6:"layout";s:4:"news";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";s:6:"banner";s:9:"/news.jpg";}}}s:4:"code";N;s:6:"markup";s:11:"<p><br></p>";s:13:"parsed-markup";s:11:"<p><br></p>";}";

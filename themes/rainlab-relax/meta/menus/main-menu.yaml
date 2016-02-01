@@ -14,7 +14,7 @@ items:
             isHidden: '0'
             cssClass: ''
     -
-        title: Organization
+        title: 'About AZLA'
         nesting: '1'
         type: static-page
         url: ''
@@ -23,55 +23,150 @@ items:
         cmsPage: ''
         replace: '0'
         viewBag:
-            isExternal: '0'
             isHidden: '0'
             cssClass: ''
-    -
-        title: News
-        nesting: '0'
-        type: static-page
-        url: ''
-        code: ''
-        reference: news
-        cmsPage: ''
-        replace: '0'
-        viewBag:
             isExternal: '0'
-            isHidden: '0'
-            cssClass: ''
         items:
             -
-                title: News
+                title: Board
                 nesting: '0'
                 type: static-page
                 url: ''
                 code: ''
-                reference: news
+                reference: organization-board
                 cmsPage: ''
                 replace: '0'
                 viewBag:
                     isExternal: '0'
                     isHidden: '0'
                     cssClass: ''
+                items:
+                    -
+                        title: 'Letter from the President'
+                        nesting: '0'
+                        type: static-page
+                        url: ''
+                        code: ''
+                        reference: news-letter-president
+                        cmsPage: ''
+                        replace: '0'
+                        viewBag:
+                            isHidden: '0'
+                            cssClass: ''
+                            isExternal: '0'
             -
-                title: Newsletter
+                title: Affiliations
                 nesting: '0'
                 type: static-page
                 url: ''
                 code: ''
-                reference: newsletter
+                reference: organization-affiliations
                 cmsPage: ''
                 replace: '0'
                 viewBag:
                     isExternal: '0'
                     isHidden: '0'
                     cssClass: ''
+                items:
+                    -
+                        title: ACTFL
+                        nesting: '0'
+                        type: static-page
+                        url: ''
+                        code: ''
+                        reference: organization-affiliations-actfl
+                        cmsPage: ''
+                        replace: '0'
+                        viewBag:
+                            isExternal: '0'
+                            isHidden: '0'
+                            cssClass: ''
+                    -
+                        title: 'AAT''s'
+                        nesting: '0'
+                        type: static-page
+                        url: ''
+                        code: ''
+                        reference: organization-affiliations-aats
+                        cmsPage: ''
+                        replace: '0'
+                        viewBag:
+                            isExternal: '0'
+                            isHidden: '0'
+                            cssClass: ''
+                    -
+                        title: 'Regional Affiliates'
+                        nesting: '0'
+                        type: static-page
+                        url: ''
+                        code: ''
+                        reference: organization-affiliations-regional-affiliates
+                        cmsPage: ''
+                        replace: '0'
+                        viewBag:
+                            isHidden: '0'
+                            cssClass: ''
+                            isExternal: '0'
+            -
+                title: History
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: organization-history
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: By-laws
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: AboutAZLA-bylaws
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Operating Manual'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: operating-manual
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Contact
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: contact
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
     -
         title: Events
         nesting: '1'
         type: static-page
+        url: ''
         code: ''
         reference: chairs
+        cmsPage: ''
         replace: '0'
         viewBag:
             isExternal: '0'
@@ -92,7 +187,7 @@ items:
                     isHidden: '0'
                     cssClass: ''
             -
-                title: 'Upcoming Events'
+                title: 'Spring Workshop'
                 nesting: '0'
                 type: static-page
                 url: ''
@@ -101,11 +196,11 @@ items:
                 cmsPage: ''
                 replace: '0'
                 viewBag:
-                    isExternal: '0'
                     isHidden: '0'
                     cssClass: ''
+                    isExternal: '0'
             -
-                title: 'Past Events'
+                title: 'Fall Conference'
                 nesting: '0'
                 type: static-page
                 url: ''
@@ -114,11 +209,88 @@ items:
                 cmsPage: ''
                 replace: '0'
                 viewBag:
-                    isExternal: '0'
                     isHidden: '0'
                     cssClass: ''
+                    isExternal: '0'
     -
-        title: Opportunities
+        title: 'News & Jobs'
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: news
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: 'All News'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: newsletter
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'AZLA News'
+                nesting: '0'
+                type: blog-category
+                url: ''
+                code: ''
+                reference: '5'
+                cmsPage: blog/category
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Advocacy
+                nesting: ''
+                type: url
+                url: 'http://azla.info/blog/category/Advocacy'
+                code: ''
+                reference: ''
+                cmsPage: ''
+                replace: ''
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'AZ Dept of Ed Updates'
+                nesting: '0'
+                type: blog-category
+                url: ''
+                code: ''
+                reference: '4'
+                cmsPage: blog/category
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Job Announcements'
+                nesting: ''
+                type: url
+                url: 'http://azla.info/blog/category/announcements'
+                code: ''
+                reference: ''
+                cmsPage: ''
+                replace: ''
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+    -
+        title: Awards
         nesting: '0'
         type: static-page
         url: ''
@@ -127,12 +299,12 @@ items:
         cmsPage: ''
         replace: '0'
         viewBag:
-            isExternal: '0'
             isHidden: '0'
             cssClass: ''
+            isExternal: '0'
         items:
             -
-                title: Scholarships
+                title: 'Available Awards & Scholarships'
                 nesting: '0'
                 type: static-page
                 url: ''
@@ -141,11 +313,11 @@ items:
                 cmsPage: ''
                 replace: '0'
                 viewBag:
-                    isExternal: '0'
                     isHidden: '0'
                     cssClass: ''
+                    isExternal: '0'
             -
-                title: 'Become a Member'
+                title: 'How to Apply for Awards & Scholarships'
                 nesting: '0'
                 type: static-page
                 url: ''
@@ -154,11 +326,11 @@ items:
                 cmsPage: ''
                 replace: '0'
                 viewBag:
-                    isExternal: '0'
                     isHidden: '0'
                     cssClass: ''
+                    isExternal: '0'
             -
-                title: Careers
+                title: 'Teacher of the Year'
                 nesting: '0'
                 type: static-page
                 url: ''
@@ -167,42 +339,46 @@ items:
                 cmsPage: ''
                 replace: '0'
                 viewBag:
-                    isExternal: '0'
                     isHidden: '0'
                     cssClass: ''
+                    isExternal: '0'
     -
-        title: About
+        title: Resources
         nesting: '0'
         type: static-page
         url: ''
         code: ''
-        reference: about
+        reference: resources
         cmsPage: ''
         replace: '0'
         viewBag:
-            isExternal: '0'
             isHidden: '0'
             cssClass: ''
+            isExternal: '0'
         items:
             -
-                title: Contact
-                nesting: ''
-                type: cms-page
-                url: ''
-                code: ''
-                reference: contact
-                cmsPage: ''
-                replace: ''
-            -
-                title: Vision
+                title: 'New Arizona Standards for World & Native Languages'
                 nesting: '0'
                 type: static-page
                 url: ''
                 code: ''
-                reference: about-team
+                reference: resources-new-arizona-standards-world-native-languages
                 cmsPage: ''
                 replace: '0'
                 viewBag:
-                    isExternal: '0'
                     isHidden: '0'
                     cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Unit & Lesson Plans'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: resources-plans
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'

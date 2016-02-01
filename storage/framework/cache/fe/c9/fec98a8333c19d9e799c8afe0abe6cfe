@@ -1,0 +1,9 @@
+1454299703s:915:"a:7:{s:5:"mtime";i:1451795195;s:7:"content";s:209:"[viewBag]
+title = "Regional Affiliates"
+url = "/organization/affiliations/regional-affiliates"
+layout = "default"
+is_hidden = 0
+navigation_hidden = 0
+banner = "/languages.jpg"
+==
+<p><span>SWCOLT</span><br></p>";s:7:"viewBag";a:6:{s:5:"title";s:19:"Regional Affiliates";s:3:"url";s:46:"/organization/affiliations/regional-affiliates";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";s:6:"banner";s:14:"/languages.jpg";}s:8:"settings";a:1:{s:10:"components";a:1:{s:7:"viewBag";a:6:{s:5:"title";s:19:"Regional Affiliates";s:3:"url";s:46:"/organization/affiliations/regional-affiliates";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";s:6:"banner";s:14:"/languages.jpg";}}}s:4:"code";N;s:6:"markup";s:30:"<p><span>SWCOLT</span><br></p>";s:13:"parsed-markup";s:30:"<p><span>SWCOLT</span><br></p>";}";

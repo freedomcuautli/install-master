@@ -1,0 +1,19 @@
+title = "Announcement Category"
+url = "/announcement/category/:slug"
+layout = "default2"
+description = "Announcements Category"
+is_hidden = 0
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = 1
+categoryPage = 404
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "announcement/category"
+postPage = "announcement/post"
+==

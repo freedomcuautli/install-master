@@ -79,16 +79,12 @@ class __TwigTemplate_606f7a90fe099d555a4836feee4073078784cc0cc819975823c5856ad6f
             echo "                            ";
             // line 37
             echo "                            ";
-            $context["randomImage"] = array(0 => "highchair", 1 => "sofa", 2 => "cafe", 3 => "in-field", 4 => "wheelchair", 5 => "chairs", 6 => "lake", 7 => "rocking-chairs");
+            $context["randomImage"] = array(0 => "sgroup10_small", 1 => "AZLAwelcome", 2 => "undergrad symposium NAU Spa 2015 small");
             // line 38
             echo "                            ";
-            $context["bannerImage"] = (($this->getAttribute($this->getAttribute($context["chairPage"], "viewBag", array()), "banner", array())) ? ($this->env->getExtension('CMS')->mediaFilter($this->getAttribute($this->getAttribute(            // line 39
-$context["chairPage"], "viewBag", array()), "banner", array()))) : ($this->env->getExtension('CMS')->themeFilter((("assets/images/chairs/" . twig_random($this->env,             // line 40
-(isset($context["randomImage"]) ? $context["randomImage"] : null))) . ".jpg"))));
-            // line 41
-            echo "
-                            <img src=\"";
-            // line 42
+            $context["bannerImage"] = (((isset($context["banner"]) ? $context["banner"] : null)) ? ($this->env->getExtension('CMS')->mediaFilter((isset($context["banner"]) ? $context["banner"] : null))) : ($this->env->getExtension('CMS')->themeFilter((("assets/images/chairs/" . twig_random($this->env, (isset($context["randomImage"]) ? $context["randomImage"] : null))) . ".jpg"))));
+            // line 39
+            echo "                            <img src=\"";
             echo twig_escape_filter($this->env, (isset($context["bannerImage"]) ? $context["bannerImage"] : null), "html", null, true);
             echo "\" alt=\"\" title=\"\" />
                         ";
@@ -96,16 +92,16 @@ $context["chairPage"], "viewBag", array()), "banner", array()))) : ($this->env->
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['chairPage'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 44
+        // line 41
         echo "                    </div>
                     <div id=\"slider-menu\" class=\"slider-menu\">
                         <ul>
                             ";
-        // line 47
+        // line 44
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["chairsPages"]) ? $context["chairsPages"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["chairPage"]) {
-            // line 48
+            // line 45
             echo "                                <li><a href=\"";
             echo $this->env->getExtension('System')->appFilter($this->getAttribute($context["chairPage"], "url", array()));
             echo "\"><span>";
@@ -116,17 +112,17 @@ $context["chairPage"], "viewBag", array()), "banner", array()))) : ($this->env->
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['chairPage'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 50
+        // line 47
         echo "                            <li class=\"desc\"><h2><span></span></h2></li>
                         </ul>
                     </div>
                     <div id=\"slider-text\" class=\"slider-text\">
                         ";
-        // line 54
+        // line 51
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["chairsPages"]) ? $context["chairsPages"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["chairPage"]) {
-            // line 55
+            // line 52
             echo "                            <h2>";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["chairPage"], "viewBag", array()), "tagline", array()), "html", null, true);
             echo "</h2>
@@ -135,7 +131,7 @@ $context["chairPage"], "viewBag", array()), "banner", array()))) : ($this->env->
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['chairPage'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 57
+        // line 54
         echo "                    </div>
                     <div class=\"slider-more-info\">
                         See all of our chairs!
@@ -146,27 +142,27 @@ $context["chairPage"], "viewBag", array()), "banner", array()))) : ($this->env->
                     <div class=\"col-sm-6 col-md-4\">
                         <div class=\"module-home\">
                             ";
-        // line 66
+        // line 63
         echo $this->env->getExtension('CMS')->pageFunction();
-        // line 67
+        // line 64
         echo "                        </div>
                     </div>
 
                     <div class=\"col-sm-6 col-md-4\">
                         <div class=\"module-home\">
                             ";
-        // line 72
+        // line 69
         $context['__placeholder_news_default_contents'] = null;        echo $this->env->getExtension('CMS')->displayBlock('news', $context['__placeholder_news_default_contents']);
-        unset($context['__placeholder_news_default_contents']);        // line 73
+        unset($context['__placeholder_news_default_contents']);        // line 70
         echo "                        </div>
                     </div>
 
                     <div class=\"col-sm-6 col-md-4\">
                         <div class=\"module-home\">
                             ";
-        // line 78
+        // line 75
         $context['__placeholder_login_default_contents'] = null;        echo $this->env->getExtension('CMS')->displayBlock('login', $context['__placeholder_login_default_contents']);
-        unset($context['__placeholder_login_default_contents']);        // line 79
+        unset($context['__placeholder_login_default_contents']);        // line 76
         echo "                        </div>
                     </div>
 
@@ -185,20 +181,20 @@ $context["chairPage"], "viewBag", array()), "banner", array()))) : ($this->env->
         <!-- Footer -->
         <footer id=\"layout-footer\">
             ";
-        // line 96
+        // line 93
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("footer"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 97
+        // line 94
         echo "        </footer>
 
         <!-- Scripts -->
         ";
-        // line 100
+        // line 97
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("scripts"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 101
+        // line 98
         echo "        <script src=\"";
         echo $this->env->getExtension('CMS')->themeFilter("assets/javascript/home.js");
         echo "\"></script>
@@ -219,7 +215,7 @@ $context["chairPage"], "viewBag", array()), "banner", array()))) : ($this->env->
 
     public function getDebugInfo()
     {
-        return array (  202 => 101,  198 => 100,  193 => 97,  189 => 96,  170 => 79,  168 => 78,  161 => 73,  159 => 72,  152 => 67,  150 => 66,  139 => 57,  130 => 55,  126 => 54,  120 => 50,  109 => 48,  105 => 47,  100 => 44,  92 => 42,  89 => 41,  87 => 40,  86 => 39,  84 => 38,  81 => 37,  79 => 36,  75 => 35,  69 => 31,  65 => 30,  55 => 22,  51 => 21,  46 => 18,  42 => 17,  28 => 5,  24 => 4,  19 => 1,);
+        return array (  198 => 98,  194 => 97,  189 => 94,  185 => 93,  166 => 76,  164 => 75,  157 => 70,  155 => 69,  148 => 64,  146 => 63,  135 => 54,  126 => 52,  122 => 51,  116 => 47,  105 => 45,  101 => 44,  96 => 41,  87 => 39,  84 => 38,  81 => 37,  79 => 36,  75 => 35,  69 => 31,  65 => 30,  55 => 22,  51 => 21,  46 => 18,  42 => 17,  28 => 5,  24 => 4,  19 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -258,11 +254,8 @@ $context["chairPage"], "viewBag", array()), "banner", array()))) : ($this->env->
 /*                     <div id="slider">*/
 /*                         {% for chairPage in chairsPages %}*/
 /*                             {# {% set randomImage = random(['sofa', 'cafe', 'in-field', 'wheelchair', 'chairs']) %} #}*/
-/*                             {% set randomImage = ['highchair', 'sofa', 'cafe', 'in-field', 'wheelchair', 'chairs', 'lake', 'rocking-chairs'] %}*/
-/*                             {% set bannerImage = chairPage.viewBag.banner */
-/*                                 ? chairPage.viewBag.banner|media*/
-/*                                 : ('assets/images/chairs/'~random(randomImage)~'.jpg')|theme %}*/
-/* */
+/*                             {% set randomImage = ['sgroup10_small', 'AZLAwelcome', 'undergrad symposium NAU Spa 2015 small'] %}*/
+/*                             {% set bannerImage = banner ? banner|media : ('assets/images/chairs/'~random(randomImage)~'.jpg')|theme %}*/
 /*                             <img src="{{ bannerImage }}" alt="" title="" />*/
 /*                         {% endfor %}*/
 /*                     </div>*/

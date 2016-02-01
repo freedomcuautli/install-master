@@ -2,6 +2,8 @@
 
 use Form;
 use Model;
+use System\Models\MailTemplate;
+use Exception;
 
 /**
  * Mail Blocker
@@ -28,6 +30,68 @@ class MailBlocker extends Model
     public $belongsTo = [
         'user' => ['RainLab\User\Models\User']
     ];
+
+    /**
+     * Sets mail blocking preferences for a user. Eg:
+     *
+     * MailBlocker::setPreferences($user, [acme.blog::post.new_reply => 0])
+     *
+     * MailBlocker::setPreferences($user, [acme.blog::post.new_reply => 0], [fillable => [acme.blog::post.new_reply]])
+     *
+     * MailBlocker::setPreferences($user, [template_alias => 0], [aliases => [template_alias => acme.blog::post.new_reply]])
+     *
+     * Supported options:
+     * - aliases: Alias definitions, with alias as key and template as value.
+     * - fillable: An array of expected templates, undefined templates are ignored.
+     * - verify: Only allow mail templates that are registered in the system.
+     *
+     * @param  array $templates Template name as key and boolean as value. If false, template is blocked. 
+     * @param  RainLab\User\Models\User $user
+     * @param  array $options
+     * @return void
+     */
+    public static function setPreferences($user, $templates, $options = [])
+    {
+        $templates = (array) $templates;
+
+        if (!$user) {
+            throw new Exception('A user must be provided for MailBlocker::setPreferences');
+        }
+
+        extract(array_merge([
+            'aliases' => [],
+            'fillable' => [],
+            'verify' => false,
+        ], $options));
+
+        if ($aliases) {
+            $fillable = array_merge($fillable, array_values($aliases));
+            $templates = array_build($templates, function($key, $value) use ($aliases) {
+                return [array_get($aliases, $key, $key), $value];
+            });
+        }
+
+        if ($fillable) {
+            $templates = array_intersect_key($templates, array_flip($fillable));
+        }
+
+        if ($verify) {
+            $existing = MailTemplate::listAllTemplates();
+            $templates = array_intersect_key($templates, $existing);
+        }
+
+        $currentBlocks = array_flip(static::checkAllForUser($user));
+        foreach ($templates as $template => $value) {
+            // User wants to receive mail and is blocking
+            if ($value && isset($currentBlocks[$template])) {
+                static::removeBlock($template, $user);
+            }
+            // User does not want to receive mail and not blocking
+            elseif (!$value && !isset($currentBlocks[$template])) {
+                static::addBlock($template, $user);
+            }
+        }
+    }
 
     /**
      * Adds a block for a user and a mail view/template code.
@@ -60,36 +124,42 @@ class MailBlocker extends Model
             'user_id' => $user->id
         ])->first();
 
-        if (!$blocker)
+        if (!$blocker) {
             return false;
+        }
 
         $blocker->delete();
         return true;
     }
 
     /**
-     * Toggles a set of templates on or off for a user, optionally filtered by a supplied set.
-     * @param  array $templates   An array containing the template name as the key and the on/off value. If false, template is blocked. 
-     * @param  RainLab\User\Models\User $user
-     * @param  array $inTemplates An optional array where values are template names to process, others are ignored.
-     * @return void
+     * Blocks all mail messages for a user.
+     * @param RainLab\User\Models\User $user
+     * @return bool
      */
-    public static function toggleBlocks($templates, $user, array $inTemplates = null)
+    public static function blockAll($user)
     {
-        foreach ((array) $templates as $template => $value) {
+        return static::addBlock('*', $user);
+    }
 
-            if ($inTemplates && !array_key_exists($template, $inTemplates) && !in_array($template, $inTemplates))
-                continue;
+    /**
+     * Removes block on all mail messages for a user.
+     * @param RainLab\User\Models\User $user
+     * @return bool
+     */
+    public static function unblockAll($user)
+    {
+        return static::removeBlock('*', $user);
+    }
 
-            // Template uses an alias
-            if (isset($inTemplates[$template]))
-                $template = $inTemplates[$template];
-
-            if ($value)
-                static::removeBlock($template, $user);
-            else
-                static::addBlock($template, $user);
-        }
+    /**
+     * Checks if a user is blocking all templates.
+     * @param RainLab\User\Models\User $user
+     * @return bool
+     */
+    public static function isBlockAll($user)
+    {
+        return static::checkForEmail('*', $user->email);
     }
 
     /**
@@ -121,15 +191,19 @@ class MailBlocker extends Model
      */
     public static function checkForEmail($template, $email)
     {
-        if (empty($email))
+        if (empty($email)) {
             return [];
+        }
 
-        if (!is_array($email))
+        if (!is_array($email)) {
             $email = [$email => null];
+        }
 
         $emails = array_keys($email);
 
-        return static::where('template', $template)
+        return static::where(function($q) use ($template) {
+                $q->where('template', $template)->orWhere('template', '*');
+            })
             ->whereIn('email', $emails)
             ->lists('email');
     }
@@ -146,16 +220,50 @@ class MailBlocker extends Model
     {
         $recipients = $message->getTo();
         $blockedAddresses = static::checkForEmail($template, $recipients);
-        if (!count($blockedAddresses))
+        if (!count($blockedAddresses)) {
             return true;
+        }
 
         foreach ($recipients as $address => $name) {
-            if (in_array($address, $blockedAddresses))
+            if (in_array($address, $blockedAddresses)) {
                 unset($recipients[$address]);
+            }
         }
 
         $message->setTo($recipients);
         return count($recipients) ? true : false;
+    }
+
+    /**
+     * @deprecated Use MailBlocker::setPreferences instead
+     * @TODO Remove this function in the next major version or if year >= 2017
+     */
+    public static function toggleBlocks($templates, $user, array $inTemplates = null)
+    {
+        traceLog('MailBlocker::toggleBlocks is deprecated, please use MailBlocker::setPreferences instead');
+
+        foreach ((array) $templates as $template => $value) {
+
+            if (
+                $inTemplates &&
+                !array_key_exists($template, $inTemplates) &&
+                !in_array($template, $inTemplates)
+            ) {
+                continue;
+            }
+
+            // Template uses an alias
+            if (isset($inTemplates[$template])) {
+                $template = $inTemplates[$template];
+            }
+
+            if ($value) {
+                static::removeBlock($template, $user);
+            }
+            else {
+                static::addBlock($template, $user);
+            }
+        }
     }
 
 }

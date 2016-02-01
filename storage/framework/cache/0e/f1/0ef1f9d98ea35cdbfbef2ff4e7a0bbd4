@@ -1,0 +1,172 @@
+1454269543s:5920:"a:6:{s:5:"mtime";i:1452985644;s:7:"content";s:2802:"description = "News layout"
+
+[session]
+security = "all"
+
+[staticMenu mainMenu]
+code = "main-menu"
+
+[staticPage]
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/category"
+postPage = "announcement/post"
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = 0
+categoryPage = "blog/category"
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        {% partial 'meta' %}
+    </head>
+    <body>
+        {variable tab="Header" type="text" name="tagline" label="Tagline"}{/variable}
+        {variable tab="Header" type="mediafinder" mode="image" name="banner" label="Banner image"}{/variable}
+
+        <!-- Top -->
+        <div id="top-nav">
+            <div class="container">
+                <!-- Put anything here, social links? -->
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header id="layout-header">
+            {% partial "header" %}
+
+            <!-- Nav -->
+            <nav id="layout-nav">
+                {% partial "nav" %}
+            </nav>
+        </header>
+        <!-- Content -->
+        <section id="layout-content">
+            <div class="container">
+                <div class="slider-wrapper title-style">
+                    {% partial "title" %}
+                </div>
+
+                {% set hasChildren = (staticPage.parent ?: staticPage.page).children %}
+
+                <div class="content-area with-padding">
+                    {% if hasChildren %}
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="module-sidemenu">
+                                    {% partial 'sidemenu' page=staticPage.page %}
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                
+                                {% page %}
+                                {% component 'blogPosts' %}
+                            </div>
+                            <div class="col-md-3">
+                                {% component 'blogCategories' %}
+                            </div>
+                        </div>
+                    {% else %}
+                        {% page %}
+                    {% endif %}
+                </div>
+            </div>
+        </section>
+
+        <!-- Slogan -->
+        <div id="layout-slogan">
+            <div class="container">
+                <div class="service-strip"></div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="layout-footer">
+            {% partial "footer" %}
+        </footer>
+
+        <!-- Scripts -->
+        {% partial 'scripts' %}
+
+    </body>
+</html>";s:7:"viewBag";a:0:{}s:8:"settings";a:2:{s:11:"description";s:11:"News layout";s:10:"components";a:5:{s:7:"session";a:1:{s:8:"security";s:3:"all";}s:19:"staticMenu mainMenu";a:1:{s:4:"code";s:9:"main-menu";}s:10:"staticPage";a:0:{}s:9:"blogPosts";a:6:{s:10:"pageNumber";s:11:"{{ :page }}";s:12:"postsPerPage";s:2:"10";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:13:"blog/category";s:8:"postPage";s:17:"announcement/post";}s:14:"blogCategories";a:3:{s:4:"slug";s:11:"{{ :slug }}";s:12:"displayEmpty";s:1:"0";s:12:"categoryPage";s:13:"blog/category";}}}s:4:"code";N;s:6:"markup";s:2414:"<!DOCTYPE html>
+<html>
+    <head>
+        {% partial 'meta' %}
+    </head>
+    <body>
+        {variable tab="Header" type="text" name="tagline" label="Tagline"}{/variable}
+        {variable tab="Header" type="mediafinder" mode="image" name="banner" label="Banner image"}{/variable}
+
+        <!-- Top -->
+        <div id="top-nav">
+            <div class="container">
+                <!-- Put anything here, social links? -->
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header id="layout-header">
+            {% partial "header" %}
+
+            <!-- Nav -->
+            <nav id="layout-nav">
+                {% partial "nav" %}
+            </nav>
+        </header>
+        <!-- Content -->
+        <section id="layout-content">
+            <div class="container">
+                <div class="slider-wrapper title-style">
+                    {% partial "title" %}
+                </div>
+
+                {% set hasChildren = (staticPage.parent ?: staticPage.page).children %}
+
+                <div class="content-area with-padding">
+                    {% if hasChildren %}
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="module-sidemenu">
+                                    {% partial 'sidemenu' page=staticPage.page %}
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                
+                                {% page %}
+                                {% component 'blogPosts' %}
+                            </div>
+                            <div class="col-md-3">
+                                {% component 'blogCategories' %}
+                            </div>
+                        </div>
+                    {% else %}
+                        {% page %}
+                    {% endif %}
+                </div>
+            </div>
+        </section>
+
+        <!-- Slogan -->
+        <div id="layout-slogan">
+            <div class="container">
+                <div class="service-strip"></div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="layout-footer">
+            {% partial "footer" %}
+        </footer>
+
+        <!-- Scripts -->
+        {% partial 'scripts' %}
+
+    </body>
+</html>";}";

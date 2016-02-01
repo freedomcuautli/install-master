@@ -1,7 +1,7 @@
 <?php 
-use RainLab\Pages\Classes\Page;
-class Cms5632e9738fdcc_2044570714Class extends \Cms\Classes\LayoutCode
+use RainLab\Pages\Classes\Page;class Cms56aed8234cae6_2471600969Class extends \Cms\Classes\LayoutCode
 {
+
 
 public function onStart()
 {

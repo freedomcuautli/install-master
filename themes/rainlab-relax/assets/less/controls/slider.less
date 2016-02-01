@@ -1,10 +1,9 @@
-
 // Custom slider
 // --------------------------------------------------
 
 @slider-menu-width: 250px;
-@slider-width: 939px;
-@slider-height: 404px;
+@slider-width: 905px;
+@slider-height: 304px;
 
 .slider-wrapper {
     width: @slider-width;
@@ -23,7 +22,7 @@
         position: absolute;
         top: 0;
         bottom: 0;
-        right: 26px;
+        right: 40px;
         z-index: 50;
 
         ul {
@@ -56,11 +55,11 @@
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
-                    padding-left: 35px;
+                    padding-left: 30px;
                     background-image: url('../images/slider/bullet-arrow.png');
                     background-repeat: no-repeat;
                     background-position: 15px 50%;
-                    width: (@slider-menu-width - 35px);
+                    width: (@slider-menu-width - 25px);
                     z-index: 50;
                     position: absolute;
                 }
@@ -73,7 +72,7 @@
             background: url('../images/slider/slider-over.png') 100% 0 no-repeat;
             width: (@slider-width + 2px);
             height: 53px;
-            margin-left: -(@slider-menu-width + 428px);
+            margin-left: -(@slider-menu-width + 412px);
             z-index: 40;
 
             &:before {
@@ -147,8 +146,17 @@
             left: 0px;
             display: none;
             overflow: hidden;
-            max-width: @slider-width;
+            
+            
+            
             max-height: @slider-height;
+            img {
+                width: 100%;
+                .img-responsive();
+            }
+            
+            
+            
         }
         a {
             border: 0;
@@ -258,4 +266,13 @@ a.nivo-prevNav {
         color: #efe9d1;
         text-decoration: underline;
     }
+}
+
+.nivoSlider img{
+    height:100% !important;
+    width:100% !important;
+} 
+.nivo-main-image{
+    height:100% !important;
+    width:100% !important;
 }

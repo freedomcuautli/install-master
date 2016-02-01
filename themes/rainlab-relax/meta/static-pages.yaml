@@ -1,22 +1,28 @@
 static-pages:
     index: {  }
-    about:
-        about-team: {  }
-    clients:
-        clients-announcements: {  }
-        clients-newsletters: {  }
-        clients-gallery: {  }
     opportunities:
         opportunities-scholarships: {  }
         opportunities-membership: {  }
         opportunities-careers: {  }
     organization:
-        organization-board: {  }
-        organization-affiliations: {  }
+        organization-board:
+            news-letter-president: {  }
+        organization-affiliations:
+            organization-affiliations-actfl: {  }
+            organization-affiliations-aats: {  }
+            organization-affiliations-regional-affiliates: {  }
         organization-history: {  }
-    news: {  }
-    newsletter: {  }
+        AboutAZLA-bylaws: {  }
+        operating-manual: {  }
+        contact: {  }
+    news:
+        newsletter: {  }
+        advocacy: {  }
     chairs:
         events-calendar-events: {  }
         events-upcoming-conferences: {  }
         events-past-events: {  }
+    client: {  }
+    resources:
+        resources-new-arizona-standards-world-native-languages: {  }
+        resources-plans: {  }

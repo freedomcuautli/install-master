@@ -1,0 +1,43 @@
+1454299771s:1237:"a:6:{s:5:"mtime";i:1454226604;s:7:"content";s:538:"[viewBag]
+==
+{% set bannerImage = banner ? banner|media : ('assets/images/chairs/news.jpg')|theme %}
+
+
+
+<div class="title-image">
+    <img src="{{ bannerImage }}" alt="" title="" class="img-responsive" />
+</div>
+<div class="title-heading">
+    <div class="title">
+        <h1>
+            <span>{{ title ?: this.page.title }}</span>
+        </h1>
+    </div>
+    <div class="desc">
+        <h2>
+            <span>
+                {{ tagline ?: this.page.meta_title }}
+            </span>
+        </h2>
+    </div>
+</div>";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:1:{s:7:"viewBag";a:0:{}}}s:4:"code";N;s:6:"markup";s:525:"{% set bannerImage = banner ? banner|media : ('assets/images/chairs/news.jpg')|theme %}
+
+
+
+<div class="title-image">
+    <img src="{{ bannerImage }}" alt="" title="" class="img-responsive" />
+</div>
+<div class="title-heading">
+    <div class="title">
+        <h1>
+            <span>{{ title ?: this.page.title }}</span>
+        </h1>
+    </div>
+    <div class="desc">
+        <h2>
+            <span>
+                {{ tagline ?: this.page.meta_title }}
+            </span>
+        </h2>
+    </div>
+</div>";}";

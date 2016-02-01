@@ -34,6 +34,46 @@ class Users extends Controller
     }
 
     /**
+     * {@inheritDoc}
+     */
+    public function listInjectRowClass($record, $definition = null)
+    {
+        if ($record->trashed()) {
+            return 'strike';
+        }
+
+        if (!$record->is_activated) {
+            return 'disabled';
+        }
+    }
+
+    public function listExtendQuery($query)
+    {
+        $query->withTrashed();
+    }
+
+    public function formExtendQuery($query)
+    {
+        $query->withTrashed();
+    }
+
+    /**
+     * Display username field if settings permit
+     */
+    public function formExtendFields($form)
+    {
+        /*
+         * Show the username field if it is configured for use
+         */
+        if (
+            UserSettings::get('login_attribute') == UserSettings::LOGIN_USERNAME &&
+            array_key_exists('username', $form->getFields())
+        ) {
+            $form->getField('username')->hidden = false;
+        }
+    }
+
+    /**
      * Manually activate a user
      */
     public function update_onActivate($recordId = null)
@@ -50,18 +90,18 @@ class Users extends Controller
     }
 
     /**
-     * Display username field if settings permit
+     * Force delete a user.
      */
-    public function formExtendFields($form)
+    public function update_onDelete($recordId = null)
     {
-        /*
-         * Show the username field if it is configured for use
-         */
-        if (
-            UserSettings::get('login_attribute') == UserSettings::LOGIN_USERNAME &&
-            array_key_exists('username', $form->getFields())
-        ) {
-            $form->getField('username')->hidden = false;
+        $model = $this->formFindModelObject($recordId);
+
+        $model->forceDelete();
+
+        Flash::success(Lang::get('backend::lang.form.delete_success'));
+
+        if ($redirect = $this->makeRedirect('delete', $model)) {
+            return $redirect;
         }
     }
 

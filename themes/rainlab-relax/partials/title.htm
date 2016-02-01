@@ -1,5 +1,7 @@
+[viewBag]
+==
 {% if not bannerImage %}
-    {% set randomImage = ['highchair', 'sofa', 'cafe', 'in-field', 'wheelchair', 'chairs', 'lake', 'rocking-chairs'] %}
+    {% set randomImage = ['AZLAwelcome', 'sgroup10_small', 'news', 'Yo & tchr 2_small', 'undergrad symposium NAU Spa 2015 small'] %}
     {% set bannerImage = banner ? banner|media : ('assets/images/chairs/'~random(randomImage)~'.jpg')|theme %}
 {% endif %}
 
@@ -20,3 +22,12 @@
         </h2>
     </div>
 </div>
+
+
+
+        overflow: hidden;
+        max-height: @slider-height;
+        img {
+            width: 100%;
+            .img-responsive();
+        }

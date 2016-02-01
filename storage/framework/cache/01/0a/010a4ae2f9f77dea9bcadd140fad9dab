@@ -1,0 +1,43 @@
+1454299704s:1392:"a:6:{s:5:"mtime";i:1454224564;s:7:"content";s:562:"title = "Announcement Pos"
+url = "/announcement/post/:slug"
+layout = "default2"
+description = "a2"
+is_hidden = 0
+meta_title = "test"
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "announcement/category"
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = 0
+categoryPage = "blog/category"
+==
+<?php
+function onEnd()
+{
+        $this->page->title = $this->post->title;
+}
+?>
+==
+<div class="row">
+    <div class="col-md-8">
+        {% component 'blogPost' %}
+    </div>
+    <div class="col-md-4">
+        {% partial 'blog/categories' %}
+    </div>
+</div>";s:7:"viewBag";a:0:{}s:8:"settings";a:7:{s:5:"title";s:16:"Announcement Pos";s:3:"url";s:24:"/announcement/post/:slug";s:6:"layout";s:8:"default2";s:11:"description";s:2:"a2";s:9:"is_hidden";s:1:"0";s:10:"meta_title";s:4:"test";s:10:"components";a:2:{s:8:"blogPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:21:"announcement/category";}s:14:"blogCategories";a:3:{s:4:"slug";s:11:"{{ :slug }}";s:12:"displayEmpty";s:1:"0";s:12:"categoryPage";s:13:"blog/category";}}}s:4:"code";s:74:"
+function onEnd()
+{
+        $this->page->title = $this->post->title;
+}
+";s:6:"markup";s:182:"<div class="row">
+    <div class="col-md-8">
+        {% component 'blogPost' %}
+    </div>
+    <div class="col-md-4">
+        {% partial 'blog/categories' %}
+    </div>
+</div>";}";

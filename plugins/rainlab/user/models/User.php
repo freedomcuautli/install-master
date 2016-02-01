@@ -1,13 +1,14 @@
 <?php namespace RainLab\User\Models;
 
-use URL;
 use Mail;
-use DB;
+use Event;
 use October\Rain\Auth\Models\User as UserBase;
 use RainLab\User\Models\Settings as UserSettings;
 
 class User extends UserBase
 {
+    use \October\Rain\Database\Traits\SoftDeleting;
+
     /**
      * @var string The database table used by the model.
      */
@@ -17,8 +18,8 @@ class User extends UserBase
      * Validation rules
      */
     public $rules = [
-        'email'    => 'required|between:3,255|email|unique:users',
-        'username' => 'required|between:2,64|unique:users',
+        'email'    => 'required|between:6,255|email|unique:users',
+        'username' => 'required|between:2,255|unique:users',
         'password' => 'required:create|between:4,255|confirmed',
         'password_confirmation' => 'required_with:password|between:4,255'
     ];
@@ -83,13 +84,51 @@ class User extends UserBase
         }
     }
 
+    public function afterLogin()
+    {
+        if ($this->trashed()) {
+            $this->last_login = $this->freshTimestamp();
+            $this->restore();
+
+            Mail::sendTo($this, 'rainlab.user::mail.reactivate', [
+                'name' => $this->name
+            ]);
+
+            Event::fire('rainlab.user.reactivate', [$this]);
+        }
+        else {
+            parent::afterLogin();
+        }
+
+        Event::fire('rainlab.user.login', [$this]);
+    }
+
     /**
-     * Before delete event
+     * After delete event
      * @return void
      */
     public function afterDelete()
     {
+        if ($this->isSoftDelete()) {
+            Event::fire('rainlab.user.deactivate', [$this]);
+            return;
+        }
+
         $this->avatar && $this->avatar->delete();
+
+        parent::afterDelete();
+    }
+
+    public function scopeIsActivated($query)
+    {
+        return $query->where('is_activated', 1);
+    }
+
+    public function scopeFilterByGroup($query, $filter)
+    {
+        return $query->whereHas('groups', function($group) use ($filter) {
+            $group->whereIn('id', $filter);
+        });
     }
 
     /**
@@ -144,14 +183,10 @@ class User extends UserBase
         }
 
         if ($mailTemplate = UserSettings::get('welcome_template')) {
-            $data = [
+            Mail::sendTo($this, $mailTemplate, [
                 'name'  => $this->name,
                 'email' => $this->email
-            ];
-
-            Mail::send($mailTemplate, $data, function($message) {
-                $message->to($this->email, $this->name);
-            });
+            ]);
         }
 
         return true;
@@ -168,5 +203,50 @@ class User extends UserBase
         }
 
         return self::where('email', $email)->first();
+    }
+
+    //
+    // Last Seen
+    //
+
+    /**
+     * Checks if the user has been seen in the last 5 minutes, and if not,
+     * updates the last_login timestamp to reflect their online status.
+     * @return void
+     */
+    public function touchLastSeen()
+    {
+        if ($this->isOnline()) {
+            return;
+        }
+
+        $oldTimestamps = $this->timestamps;
+        $this->timestamps = false;
+
+        $this
+            ->newQuery()
+            ->where('id', $this->id)
+            ->update(['last_login' => $this->freshTimestamp()])
+        ;
+
+        $this->timestamps = $oldTimestamps;
+    }
+
+    /**
+     * Returns true if the user has been active within the last 5 minutes.
+     * @return bool
+     */
+    public function isOnline()
+    {
+        return $this->getLastSeen() > $this->freshTimestamp()->subMinutes(5);
+    }
+
+    /**
+     * Returns the date this user was last seen.
+     * @return Carbon\Carbon
+     */
+    public function getLastSeen()
+    {
+        return $this->last_login ?: $this->created_at;
     }
 }

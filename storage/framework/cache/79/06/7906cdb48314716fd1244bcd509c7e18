@@ -1,14 +1,17 @@
-1446269778s:7967:"a:6:{s:5:"mtime";i:1446010787;s:7:"content";s:3879:"description = "Default layout"
+1454299704s:8035:"a:6:{s:5:"mtime";i:1454227322;s:7:"content";s:3907:"description = "Default layout"
 
 [account]
+paramCode = "code"
+
 [session]
+security = "all"
 
 [staticMenu mainMenu]
 code = "main-menu"
 
 [staticPage]
 ==
-<?
+<?php
 use RainLab\Pages\Classes\Page;
 
 function onStart()
@@ -54,11 +57,8 @@ function onStart()
                     <div id="slider">
                         {% for chairPage in chairsPages %}
                             {# {% set randomImage = random(['sofa', 'cafe', 'in-field', 'wheelchair', 'chairs']) %} #}
-                            {% set randomImage = ['highchair', 'sofa', 'cafe', 'in-field', 'wheelchair', 'chairs', 'lake', 'rocking-chairs'] %}
-                            {% set bannerImage = chairPage.viewBag.banner 
-                                ? chairPage.viewBag.banner|media
-                                : ('assets/images/chairs/'~random(randomImage)~'.jpg')|theme %}
-
+                            {% set randomImage = ['sgroup10_small', 'AZLAwelcome', 'undergrad symposium NAU Spa 2015 small'] %}
+                            {% set bannerImage = banner ? banner|media : ('assets/images/chairs/'~random(randomImage)~'.jpg')|theme %}
                             <img src="{{ bannerImage }}" alt="" title="" />
                         {% endfor %}
                     </div>
@@ -121,7 +121,7 @@ function onStart()
         <script src="{{ 'assets/javascript/home.js'|theme }}"></script>
 
     </body>
-</html>";s:7:"viewBag";a:0:{}s:8:"settings";a:2:{s:11:"description";s:14:"Default layout";s:10:"components";a:4:{s:7:"account";a:0:{}s:7:"session";a:0:{}s:19:"staticMenu mainMenu";a:1:{s:4:"code";s:9:"main-menu";}s:10:"staticPage";a:0:{}}}s:4:"code";s:140:"
+</html>";s:7:"viewBag";a:0:{}s:8:"settings";a:2:{s:11:"description";s:14:"Default layout";s:10:"components";a:4:{s:7:"account";a:1:{s:9:"paramCode";s:4:"code";}s:7:"session";a:1:{s:8:"security";s:3:"all";}s:19:"staticMenu mainMenu";a:1:{s:4:"code";s:9:"main-menu";}s:10:"staticPage";a:0:{}}}s:4:"code";s:146:"
 use RainLab\Pages\Classes\Page;
 
 function onStart()
@@ -129,7 +129,7 @@ function onStart()
     $page = Page::find('chairs');
     $this['chairsPages'] = $page->getChildren();
 }
-";s:6:"markup";s:3620:"<!DOCTYPE html>
+";s:6:"markup";s:3602:"<!DOCTYPE html>
 <html>
     <head>
         {% partial 'meta' %}
@@ -165,11 +165,8 @@ function onStart()
                     <div id="slider">
                         {% for chairPage in chairsPages %}
                             {# {% set randomImage = random(['sofa', 'cafe', 'in-field', 'wheelchair', 'chairs']) %} #}
-                            {% set randomImage = ['highchair', 'sofa', 'cafe', 'in-field', 'wheelchair', 'chairs', 'lake', 'rocking-chairs'] %}
-                            {% set bannerImage = chairPage.viewBag.banner 
-                                ? chairPage.viewBag.banner|media
-                                : ('assets/images/chairs/'~random(randomImage)~'.jpg')|theme %}
-
+                            {% set randomImage = ['sgroup10_small', 'AZLAwelcome', 'undergrad symposium NAU Spa 2015 small'] %}
+                            {% set bannerImage = banner ? banner|media : ('assets/images/chairs/'~random(randomImage)~'.jpg')|theme %}
                             <img src="{{ bannerImage }}" alt="" title="" />
                         {% endfor %}
                     </div>

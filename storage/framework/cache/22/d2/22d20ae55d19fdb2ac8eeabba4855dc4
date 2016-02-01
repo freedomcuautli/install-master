@@ -1,0 +1,10 @@
+1452977923s:1051:"a:7:{s:5:"mtime";i:1452977288;s:7:"content";s:249:"[viewBag]
+title = "newsletters"
+url = "/newsletters"
+layout = "default"
+is_hidden = 0
+navigation_hidden = 0
+tagline = "newsletters"
+banner = "/news.jpg"
+==
+<p>​</p><figure data-snippet="news" data-inspector-id="inspectorid-1087866723407"></figure>";s:7:"viewBag";a:7:{s:5:"title";s:11:"newsletters";s:3:"url";s:12:"/newsletters";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";s:7:"tagline";s:11:"newsletters";s:6:"banner";s:9:"/news.jpg";}s:8:"settings";a:1:{s:10:"components";a:1:{s:7:"viewBag";a:7:{s:5:"title";s:11:"newsletters";s:3:"url";s:12:"/newsletters";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";s:7:"tagline";s:11:"newsletters";s:6:"banner";s:9:"/news.jpg";}}}s:4:"code";N;s:6:"markup";s:93:"<p>​</p><figure data-snippet="news" data-inspector-id="inspectorid-1087866723407"></figure>";s:13:"parsed-markup";s:93:"<p>​</p><figure data-snippet="news" data-inspector-id="inspectorid-1087866723407"></figure>";}";

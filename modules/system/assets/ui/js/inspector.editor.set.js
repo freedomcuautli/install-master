@@ -88,7 +88,8 @@
 
             text = '[' + textValues.join(', ') + ']'
             $.oc.foundation.element.removeClass(link, 'placeholder')
-        } else {
+        }
+        else {
             text = this.propertyDefinition.placeholder
 
             if ((typeof text === 'string' && text.length == 0) || text === undefined) {
@@ -145,6 +146,10 @@
     }
 
     SetEditor.prototype.hideLoadingIndicator = function() {
+        if (this.isDisposed()) {
+            return
+        }
+
         var $link = $(this.getLink())
 
         $link.loadIndicator('hide')
@@ -170,6 +175,12 @@
     }
 
     SetEditor.prototype.itemsRequestDone = function(data, currentValue, initialization) {
+        if (this.isDisposed()) {
+            // Handle the case when the asynchronous request finishes after
+            // the editor is disposed
+            return
+        }
+
         this.loadedItems = {}
 
         if (data.options) {
@@ -308,19 +319,21 @@
             currentValue = []
         }
 
-        if (isChecked) {
-            if (currentValue.indexOf(checkboxValue) === -1) {
-                currentValue.push(checkboxValue)
-            }
-        }
-        else {
-            var index = currentValue.indexOf(checkboxValue)
-            if (index !== -1) {
-                currentValue.splice(index, 1)
+        var resultValue = []
+        for (var itemValue in this.propertyDefinition.items) {
+            if (itemValue !== checkboxValue) {
+                if (currentValue.indexOf(itemValue) !== -1) {
+                    resultValue.push(itemValue)
+                }
+            } 
+            else {
+                if (isChecked) {
+                    resultValue.push(itemValue)
+                }
             }
         }
 
-        this.inspector.setPropertyValue(this.propertyDefinition.property, this.cleanUpValue(currentValue))
+        this.inspector.setPropertyValue(this.propertyDefinition.property, this.cleanUpValue(resultValue))
         this.setLinkText(this.getLink())
     }
 

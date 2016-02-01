@@ -1,0 +1,20 @@
+1452976788s:1233:"a:6:{s:5:"mtime";i:1452976184;s:7:"content";s:460:"title = "Announcement Category"
+url = "/announcement/category/:slug"
+layout = "default2"
+description = "Announcements Category"
+is_hidden = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = ":slug"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "announcements/category"
+postPage = "announcement/post"
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = 0
+categoryPage = "announcements/category"
+==";s:7:"viewBag";a:0:{}s:8:"settings";a:6:{s:5:"title";s:21:"Announcement Category";s:3:"url";s:28:"/announcement/category/:slug";s:6:"layout";s:8:"default2";s:11:"description";s:22:"Announcements Category";s:9:"is_hidden";s:1:"0";s:10:"components";a:2:{s:9:"blogPosts";a:7:{s:10:"pageNumber";s:11:"{{ :page }}";s:14:"categoryFilter";s:5:":slug";s:12:"postsPerPage";s:2:"10";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:22:"announcements/category";s:8:"postPage";s:17:"announcement/post";}s:14:"blogCategories";a:3:{s:4:"slug";s:11:"{{ :slug }}";s:12:"displayEmpty";s:1:"0";s:12:"categoryPage";s:22:"announcements/category";}}}s:4:"code";N;s:6:"markup";s:0:"";}";

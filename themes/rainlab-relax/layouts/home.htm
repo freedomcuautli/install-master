@@ -1,14 +1,17 @@
 description = "Default layout"
 
 [account]
+paramCode = "code"
+
 [session]
+security = "all"
 
 [staticMenu mainMenu]
 code = "main-menu"
 
 [staticPage]
 ==
-<?
+<?php
 use RainLab\Pages\Classes\Page;
 
 function onStart()
@@ -54,11 +57,8 @@ function onStart()
                     <div id="slider">
                         {% for chairPage in chairsPages %}
                             {# {% set randomImage = random(['sofa', 'cafe', 'in-field', 'wheelchair', 'chairs']) %} #}
-                            {% set randomImage = ['highchair', 'sofa', 'cafe', 'in-field', 'wheelchair', 'chairs', 'lake', 'rocking-chairs'] %}
-                            {% set bannerImage = chairPage.viewBag.banner 
-                                ? chairPage.viewBag.banner|media
-                                : ('assets/images/chairs/'~random(randomImage)~'.jpg')|theme %}
-
+                            {% set randomImage = ['sgroup10_small', 'AZLAwelcome', 'undergrad symposium NAU Spa 2015 small'] %}
+                            {% set bannerImage = banner ? banner|media : ('assets/images/chairs/'~random(randomImage)~'.jpg')|theme %}
                             <img src="{{ bannerImage }}" alt="" title="" />
                         {% endfor %}
                     </div>

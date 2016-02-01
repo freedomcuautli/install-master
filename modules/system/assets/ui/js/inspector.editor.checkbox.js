@@ -60,8 +60,9 @@
     }
 
     CheckboxEditor.prototype.normalizeCheckedValue = function(value) {
-         if (value == '0' || value == 'false')
-            return false
+         if (value == '0' || value == 'false') {
+             return false
+         }
 
         return value
     }
@@ -76,6 +77,14 @@
 
     CheckboxEditor.prototype.updateDisplayedValue = function(value) {
         this.getInput().checked = this.normalizeCheckedValue(value)
+    }
+
+    CheckboxEditor.prototype.isEmptyValue = function(value) {
+        if (value === 0 || value === '0' || value === 'false') {
+            return true
+        }
+
+        return BaseProto.isEmptyValue.call(this, value)
     }
 
     CheckboxEditor.prototype.registerHandlers = function() {

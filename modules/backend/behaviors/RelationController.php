@@ -913,6 +913,19 @@ class RelationController extends ControllerBehavior
 
         if ($this->viewMode == 'multi') {
             $newModel = $this->relationModel;
+
+            /*
+             * In special cases, has one/many will require a foreign key set
+             * to pass any constraints imposed by the database. This emulates
+             * the "create" method on the relation object.
+             */
+            if (in_array($this->relationType, ['hasOne', 'hasMany'])) {
+                $newModel->setAttribute(
+                    $this->relationObject->getPlainForeignKey(),
+                    $this->relationObject->getParentKey()
+                );
+            }
+
             $modelsToSave = $this->prepareModelsToSave($newModel, $saveData);
             foreach ($modelsToSave as $modelToSave) {
                 $modelToSave->save(null, $this->manageWidget->getSessionKey());
@@ -1163,7 +1176,7 @@ class RelationController extends ControllerBehavior
             foreach ($hyrdatedModels as $hydratedModel) {
                 $modelsToSave = $this->prepareModelsToSave($hydratedModel, $saveData);
                 foreach ($modelsToSave as $modelToSave) {
-                    $modelToSave->save();
+                    $modelToSave->save(null, $this->pivotWidget->getSessionKey());
                 }
             }
         });
@@ -1181,7 +1194,7 @@ class RelationController extends ControllerBehavior
 
         $modelsToSave = $this->prepareModelsToSave($hydratedModel, $saveData);
         foreach ($modelsToSave as $modelToSave) {
-            $modelToSave->save();
+            $modelToSave->save(null, $this->pivotWidget->getSessionKey());
         }
 
         return ['#'.$this->relationGetId('view') => $this->relationRenderView()];
