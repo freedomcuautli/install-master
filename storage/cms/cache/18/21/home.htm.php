@@ -1,5 +1,5 @@
 <?php 
-use RainLab\Pages\Classes\Page;class Cms56aee070d26e7_1724650557Class extends \Cms\Classes\LayoutCode
+use RainLab\Pages\Classes\Page;class Cms56aee349a0075_200737449Class extends \Cms\Classes\LayoutCode
 {
 
 

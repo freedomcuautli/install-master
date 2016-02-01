@@ -1,7 +1,7 @@
-1454301880s:1929:"a:6:{s:5:"mtime";i:1454298530;s:7:"content";s:884:"[viewBag]
+1454302625s:1563:"a:6:{s:5:"mtime";i:1454301968;s:7:"content";s:701:"[viewBag]
 ==
 {% if not bannerImage %}
-    {% set randomImage = ['AZLAwelcome', 'sgroup10_small', 'news', 'Yo & tchr 2_small', 'undergrad symposium NAU Spa 2015 small'] %}
+    {% set randomImage = ['sgroup10_small', 'AZLAwelcome', 'undergrad symposium NAU Spa 2015 small'] %}
     {% set bannerImage = banner ? banner|media : ('assets/images/chairs/'~random(randomImage)~'.jpg')|theme %}
 {% endif %}
 
@@ -21,17 +21,8 @@
             </span>
         </h2>
     </div>
-</div>
-
-
-
-        overflow: hidden;
-        max-height: @slider-height;
-        img {
-            width: 100%;
-            .img-responsive();
-        }";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:1:{s:7:"viewBag";a:0:{}}}s:4:"code";N;s:6:"markup";s:871:"{% if not bannerImage %}
-    {% set randomImage = ['AZLAwelcome', 'sgroup10_small', 'news', 'Yo & tchr 2_small', 'undergrad symposium NAU Spa 2015 small'] %}
+</div>";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:1:{s:7:"viewBag";a:0:{}}}s:4:"code";N;s:6:"markup";s:688:"{% if not bannerImage %}
+    {% set randomImage = ['sgroup10_small', 'AZLAwelcome', 'undergrad symposium NAU Spa 2015 small'] %}
     {% set bannerImage = banner ? banner|media : ('assets/images/chairs/'~random(randomImage)~'.jpg')|theme %}
 {% endif %}
 
@@ -51,13 +42,4 @@
             </span>
         </h2>
     </div>
-</div>
-
-
-
-        overflow: hidden;
-        max-height: @slider-height;
-        img {
-            width: 100%;
-            .img-responsive();
-        }";}";
+</div>";}";

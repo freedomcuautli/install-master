@@ -19,7 +19,7 @@ class __TwigTemplate_76664e32fd00e6b17b8e8a6b27b279e40ab119b6cf1277c3d8e85dd06b3
         if ( !(isset($context["bannerImage"]) ? $context["bannerImage"] : null)) {
             // line 2
             echo "    ";
-            $context["randomImage"] = array(0 => "AZLAwelcome", 1 => "sgroup10_small", 2 => "news", 3 => "Yo & tchr 2_small", 4 => "undergrad symposium NAU Spa 2015 small");
+            $context["randomImage"] = array(0 => "sgroup10_small", 1 => "AZLAwelcome", 2 => "undergrad symposium NAU Spa 2015 small");
             // line 3
             echo "    ";
             $context["bannerImage"] = (((isset($context["banner"]) ? $context["banner"] : null)) ? ($this->env->getExtension('CMS')->mediaFilter((isset($context["banner"]) ? $context["banner"] : null))) : ($this->env->getExtension('CMS')->themeFilter((("assets/images/chairs/" . twig_random($this->env, (isset($context["randomImage"]) ? $context["randomImage"] : null))) . ".jpg"))));
@@ -51,16 +51,7 @@ class __TwigTemplate_76664e32fd00e6b17b8e8a6b27b279e40ab119b6cf1277c3d8e85dd06b3
             </span>
         </h2>
     </div>
-</div>
-
-
-
-        overflow: hidden;
-        max-height: @slider-height;
-        img {
-            width: 100%;
-            .img-responsive();
-        }";
+</div>";
     }
 
     public function getTemplateName()
@@ -79,7 +70,7 @@ class __TwigTemplate_76664e32fd00e6b17b8e8a6b27b279e40ab119b6cf1277c3d8e85dd06b3
     }
 }
 /* {% if not bannerImage %}*/
-/*     {% set randomImage = ['AZLAwelcome', 'sgroup10_small', 'news', 'Yo & tchr 2_small', 'undergrad symposium NAU Spa 2015 small'] %}*/
+/*     {% set randomImage = ['sgroup10_small', 'AZLAwelcome', 'undergrad symposium NAU Spa 2015 small'] %}*/
 /*     {% set bannerImage = banner ? banner|media : ('assets/images/chairs/'~random(randomImage)~'.jpg')|theme %}*/
 /* {% endif %}*/
 /* */
@@ -100,12 +91,3 @@ class __TwigTemplate_76664e32fd00e6b17b8e8a6b27b279e40ab119b6cf1277c3d8e85dd06b3
 /*         </h2>*/
 /*     </div>*/
 /* </div>*/
-/* */
-/* */
-/* */
-/*         overflow: hidden;*/
-/*         max-height: @slider-height;*/
-/*         img {*/
-/*             width: 100%;*/
-/*             .img-responsive();*/
-/*         }*/

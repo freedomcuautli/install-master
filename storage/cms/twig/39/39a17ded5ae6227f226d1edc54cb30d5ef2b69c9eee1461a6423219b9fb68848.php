@@ -1,7 +1,7 @@
 <?php
 
-/* /var/www/azla.info/install-master/themes/rainlab-relax/content/static-pages/opportunities.htm */
-class __TwigTemplate_9ab378ce8b9ad6c9af2254a843affbf7aad822ee538440dbdd5b471bba862747 extends Twig_Template
+/* /var/www/azla.info/install-master/themes/rainlab-relax/content/static-pages/opportunities-scholarships.htm */
+class __TwigTemplate_8ec0580b0163856b7ae7e40cc73c2db7378837cfd0b0cb09cf25784875ddd70a extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -19,7 +19,7 @@ class __TwigTemplate_9ab378ce8b9ad6c9af2254a843affbf7aad822ee538440dbdd5b471bba8
 
     public function getTemplateName()
     {
-        return "/var/www/azla.info/install-master/themes/rainlab-relax/content/static-pages/opportunities.htm";
+        return "/var/www/azla.info/install-master/themes/rainlab-relax/content/static-pages/opportunities-scholarships.htm";
     }
 
     public function getDebugInfo()
