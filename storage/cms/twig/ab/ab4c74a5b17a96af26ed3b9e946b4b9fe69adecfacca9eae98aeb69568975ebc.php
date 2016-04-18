@@ -18,7 +18,7 @@ class __TwigTemplate_a62e475d123197fc3bea15e6c582443680f45630ea8ba1cac430d143ce0
         // line 1
         echo $this->env->getExtension('CMS')->startBlock('news'        );
         // line 2
-        echo "<h3>AZLA News​</h3><p>Coming soon!​</p>
+        echo "<h3>AZLA News​</h3><figure data-snippet=\"news\"></figure>
 ";
         // line 1
         echo $this->env->getExtension('CMS')->endBlock(true        );
@@ -50,7 +50,7 @@ class __TwigTemplate_a62e475d123197fc3bea15e6c582443680f45630ea8ba1cac430d143ce0
     }
 }
 /* {% put news %}*/
-/* <h3>AZLA News​</h3><p>Coming soon!​</p>*/
+/* <h3>AZLA News​</h3><figure data-snippet="news"></figure>*/
 /* {% endput %}*/
 /* */
 /* {% put login %}*/

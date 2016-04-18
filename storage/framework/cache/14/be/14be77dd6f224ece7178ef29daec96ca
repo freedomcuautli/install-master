@@ -1,4 +1,4 @@
-1454302625s:751:"a:7:{s:5:"mtime";i:1451796761;s:7:"content";s:155:"[viewBag]
+1460943813s:1077:"a:7:{s:5:"mtime";i:1457722394;s:7:"content";s:263:"[viewBag]
 title = "By laws"
 url = "/AboutAZLA/bylaws"
 layout = "default"
@@ -6,4 +6,4 @@ is_hidden = 0
 navigation_hidden = 0
 banner = "/languages.jpg"
 ==
-<p>​By laws</p>";s:7:"viewBag";a:6:{s:5:"title";s:7:"By laws";s:3:"url";s:17:"/AboutAZLA/bylaws";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";s:6:"banner";s:14:"/languages.jpg";}s:8:"settings";a:1:{s:10:"components";a:1:{s:7:"viewBag";a:6:{s:5:"title";s:7:"By laws";s:3:"url";s:17:"/AboutAZLA/bylaws";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";s:6:"banner";s:14:"/languages.jpg";}}}s:4:"code";N;s:6:"markup";s:17:"<p>​By laws</p>";s:13:"parsed-markup";s:17:"<p>​By laws</p>";}";
+<p></p><h4>Please click to read:&nbsp;<a href="/storage/app/media/AZLA_BYLAWS_2011.pdf">​AZLA By laws​​</a></h4><p></p>";s:7:"viewBag";a:6:{s:5:"title";s:7:"By laws";s:3:"url";s:17:"/AboutAZLA/bylaws";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";s:6:"banner";s:14:"/languages.jpg";}s:8:"settings";a:1:{s:10:"components";a:1:{s:7:"viewBag";a:6:{s:5:"title";s:7:"By laws";s:3:"url";s:17:"/AboutAZLA/bylaws";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";s:6:"banner";s:14:"/languages.jpg";}}}s:4:"code";N;s:6:"markup";s:125:"<p></p><h4>Please click to read:&nbsp;<a href="/storage/app/media/AZLA_BYLAWS_2011.pdf">​AZLA By laws​​</a></h4><p></p>";s:13:"parsed-markup";s:125:"<p></p><h4>Please click to read:&nbsp;<a href="/storage/app/media/AZLA_BYLAWS_2011.pdf">​AZLA By laws​​</a></h4><p></p>";}";

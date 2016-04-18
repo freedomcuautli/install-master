@@ -212,12 +212,26 @@ items:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
+                items:
+                    -
+                        title: 'Call for Proposals'
+                        nesting: '0'
+                        type: static-page
+                        code: ''
+                        reference: events-FallConference-call-proposals
+                        replace: '0'
+                        viewBag:
+                            isHidden: '0'
+                            cssClass: ''
+                            isExternal: '0'
     -
         title: 'News & Jobs'
         nesting: '0'
         type: static-page
+        url: ''
         code: ''
         reference: news
+        cmsPage: ''
         replace: '0'
         viewBag:
             isHidden: '0'
@@ -304,12 +318,12 @@ items:
             isExternal: '0'
         items:
             -
-                title: 'Available Awards & Scholarships'
+                title: 'Awards and Scholarships'
                 nesting: '0'
                 type: static-page
                 url: ''
                 code: ''
-                reference: opportunities-scholarships
+                reference: opportunities
                 cmsPage: ''
                 replace: '0'
                 viewBag:
@@ -317,7 +331,7 @@ items:
                     cssClass: ''
                     isExternal: '0'
             -
-                title: 'How to Apply for Awards & Scholarships'
+                title: 'Apply for Awards & Scholarships'
                 nesting: '0'
                 type: static-page
                 url: ''
@@ -336,6 +350,19 @@ items:
                 url: ''
                 code: ''
                 reference: opportunities-careers
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'President Elect'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: opportunities-scholarships
                 cmsPage: ''
                 replace: '0'
                 viewBag:

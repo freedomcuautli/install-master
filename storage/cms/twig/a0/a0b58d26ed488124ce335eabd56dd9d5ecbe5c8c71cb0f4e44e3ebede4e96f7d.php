@@ -39,10 +39,10 @@ class __TwigTemplate_aafc5f6ca0a70d1c30b6c8fa73289012bb20396bf6914fd907509296f65
             -->
             <div class=\"social-icon\">
                 <p>Follow us!</p></br>
-\t\t\t\t<a href=\"#\" class=\"img-circle\">
+\t\t\t\t<a href=\"https://www.facebook.com/Azlanguageassociation/?fref=ts\" class=\"img-circle\">
 \t\t\t\t\t<i class=\"fa fa-facebook\" id=\"faceb\"></i>
 \t\t\t\t</a>
-\t\t\t\t<a href=\"#\" class=\"img-circle\">
+\t\t\t\t<a href=\"https://twitter.com/azlainfo\" class=\"img-circle\">
 \t\t\t\t\t<i class=\"fa fa-twitter\"></i>
 \t\t\t\t</a>
 \t\t\t\t<a href=\"#\" class=\"img-circle \">
@@ -86,10 +86,10 @@ class __TwigTemplate_aafc5f6ca0a70d1c30b6c8fa73289012bb20396bf6914fd907509296f65
 /*             -->*/
 /*             <div class="social-icon">*/
 /*                 <p>Follow us!</p></br>*/
-/* 				<a href="#" class="img-circle">*/
+/* 				<a href="https://www.facebook.com/Azlanguageassociation/?fref=ts" class="img-circle">*/
 /* 					<i class="fa fa-facebook" id="faceb"></i>*/
 /* 				</a>*/
-/* 				<a href="#" class="img-circle">*/
+/* 				<a href="https://twitter.com/azlainfo" class="img-circle">*/
 /* 					<i class="fa fa-twitter"></i>*/
 /* 				</a>*/
 /* 				<a href="#" class="img-circle ">*/

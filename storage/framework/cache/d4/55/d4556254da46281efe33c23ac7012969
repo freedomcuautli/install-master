@@ -1,4 +1,4 @@
-1454302625s:1415:"a:7:{s:5:"mtime";i:1451936551;s:7:"content";s:463:"[viewBag]
+1460943813s:1574:"a:7:{s:5:"mtime";i:1457578566;s:7:"content";s:521:"[viewBag]
 title = "Home"
 url = "/"
 layout = "home"
@@ -6,17 +6,17 @@ is_hidden = 0
 navigation_hidden = 0
 ==
 {% put news %}
-<h3>AZLA News​</h3><p>Coming soon!​</p>
+<h3>AZLA News​</h3><figure data-snippet="news"></figure>
 {% endput %}
 
 {% put login %}
 <h3>​Contact AZLA</h3><p>Email: ArizonaLanguageAssocation (at) gmail.com</p><p>We look forward to seeing you at an upcoming event!​</p>
 {% endput %}
 ==
-<h3>About</h3><p>This website for the Arizona Language Assocation (AZLA) is currently under construction. Stay tuned!</p><p></p>";s:7:"viewBag";a:5:{s:5:"title";s:4:"Home";s:3:"url";s:1:"/";s:6:"layout";s:4:"home";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}s:8:"settings";a:1:{s:10:"components";a:1:{s:7:"viewBag";a:5:{s:5:"title";s:4:"Home";s:3:"url";s:1:"/";s:6:"layout";s:4:"home";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}}}s:4:"code";s:241:"{% put news %}
-<h3>AZLA News​</h3><p>Coming soon!​</p>
+<h3>About</h3><p>This is the NEW website for the Arizona Language Assocation (AZLA). We appreciate your patience as some areas are still&nbsp;under construction.&nbsp;</p>";s:7:"viewBag";a:5:{s:5:"title";s:4:"Home";s:3:"url";s:1:"/";s:6:"layout";s:4:"home";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}s:8:"settings";a:1:{s:10:"components";a:1:{s:7:"viewBag";a:5:{s:5:"title";s:4:"Home";s:3:"url";s:1:"/";s:6:"layout";s:4:"home";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}}}s:4:"code";s:256:"{% put news %}
+<h3>AZLA News​</h3><figure data-snippet="news"></figure>
 {% endput %}
 
 {% put login %}
 <h3>​Contact AZLA</h3><p>Email: ArizonaLanguageAssocation (at) gmail.com</p><p>We look forward to seeing you at an upcoming event!​</p>
-{% endput %}";s:6:"markup";s:128:"<h3>About</h3><p>This website for the Arizona Language Assocation (AZLA) is currently under construction. Stay tuned!</p><p></p>";s:13:"parsed-markup";s:128:"<h3>About</h3><p>This website for the Arizona Language Assocation (AZLA) is currently under construction. Stay tuned!</p><p></p>";}";
+{% endput %}";s:6:"markup";s:171:"<h3>About</h3><p>This is the NEW website for the Arizona Language Assocation (AZLA). We appreciate your patience as some areas are still&nbsp;under construction.&nbsp;</p>";s:13:"parsed-markup";s:171:"<h3>About</h3><p>This is the NEW website for the Arizona Language Assocation (AZLA). We appreciate your patience as some areas are still&nbsp;under construction.&nbsp;</p>";}";

@@ -1,9 +1,9 @@
 static-pages:
     index: {  }
     opportunities:
-        opportunities-scholarships: {  }
         opportunities-membership: {  }
         opportunities-careers: {  }
+        opportunities-scholarships: {  }
     organization:
         organization-board:
             news-letter-president: {  }
@@ -17,11 +17,11 @@ static-pages:
         contact: {  }
     news:
         newsletter: {  }
-        advocacy: {  }
     chairs:
         events-calendar-events: {  }
         events-upcoming-conferences: {  }
-        events-past-events: {  }
+        events-past-events:
+            events-FallConference-call-proposals: {  }
     client: {  }
     resources:
         resources-new-arizona-standards-world-native-languages: {  }
