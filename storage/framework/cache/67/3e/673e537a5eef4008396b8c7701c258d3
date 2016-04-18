@@ -1,4 +1,4 @@
-1460943813s:1237:"a:6:{s:5:"mtime";i:1454226604;s:7:"content";s:538:"[viewBag]
+1460959772s:1237:"a:6:{s:5:"mtime";i:1454226604;s:7:"content";s:538:"[viewBag]
 ==
 {% set bannerImage = banner ? banner|media : ('assets/images/chairs/news.jpg')|theme %}
 

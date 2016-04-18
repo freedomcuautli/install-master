@@ -26,8 +26,8 @@ class __TwigTemplate_aa2d5a2af1b1611c519f2b1877c27431c031fcd03418e003eeedf57ad2b
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
         echo '<script src="'. Request::getBasePath()
                     .'/modules/system/assets/js/framework.extras.js"></script>'.PHP_EOL;
-        echo '<link href="'. Request::getBasePath()
-                    .'/modules/system/assets/css/framework.extras.css" rel="stylesheet">'.PHP_EOL;
+        echo '<link rel="stylesheet" property="stylesheet" href="'. Request::getBasePath()
+                    .'/modules/system/assets/css/framework.extras.css">'.PHP_EOL;
         // line 7
         echo $this->env->getExtension('CMS')->assetsFunction('js');
         echo $this->env->getExtension('CMS')->displayBlock('scripts');
